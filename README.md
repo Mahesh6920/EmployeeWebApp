@@ -8,6 +8,11 @@ A simple REST API project built using Spring Boot and Java. This application dem
 - JSON response handling
 - Dependency Injection using @Autowired
 - Annotation-based configuration
+- Store employee data in MySQL database
+- Automatic table creation using Hibernate
+- Entity mapping using JPA annotations
+- Spring Data JPA integration
+- MySQL database configuration using application.properties
 
 ### CURD Operations
 - Get Employees
@@ -21,6 +26,9 @@ A simple REST API project built using Spring Boot and Java. This application dem
 - Spring Boot
 - REST API
 - Maven
+- Spring Data JPA
+- Hibernate
+- MySQL
 
 ### Project Structure
 ```
@@ -75,3 +83,38 @@ Through this project, I learned:
     - @Autowired
 - Returning Java objects as JSON responses
 - Organizing code using layered architecture
+
+### Dependencies Used
+
+#### Spring Data JPA
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+```
+
+### MySQL Driver
+
+```xml
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <scope>runtime</scope>
+</dependency>
+```
+
+
+## Database Configuration
+
+```properties
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.datasource.url=jdbc:mysql://localhost:3306/Spring
+spring.datasource.username=root
+spring.datasource.password=your_password
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+```
