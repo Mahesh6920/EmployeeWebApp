@@ -1,10 +1,12 @@
 package com.example.practiseWebApp.model;
 
-import org.springframework.stereotype.Component;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-@Component
+@Entity
 public class Employee {
 
+	@Id
 	private int id;
 	private String name;
 	private int age;
