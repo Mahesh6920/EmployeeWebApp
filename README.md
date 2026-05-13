@@ -13,6 +13,12 @@ A simple REST API project built using Spring Boot and Java. This application dem
 - Entity mapping using JPA annotations
 - Spring Data JPA integration
 - MySQL database configuration using application.properties
+- Get all employees
+- Get employee by ID
+- Add employee
+- Update employee
+- Delete employee
+- Database integration using JPA
 
 ### CURD Operations
 - Get Employees
